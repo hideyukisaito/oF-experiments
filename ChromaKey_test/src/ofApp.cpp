@@ -13,7 +13,7 @@ void ofApp::setup()
     
     for (const auto& device_ : mGrabber.listDevices())
     {
-        if (ofIsStringInString(device_.deviceName, "Logicool"))
+        if (ofIsStringInString(device_.deviceName, "THETA"))
         {
             mGrabber.setDeviceID(device_.id);
             break;
